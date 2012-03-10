@@ -64,6 +64,10 @@
     <div class="errorExplanation"><%= escape_preserving_linefeeds(@error || flash[:error]) %></div>
 <%- end -%>
 
+<%- if @show_footer -%>
+<iframe src="//www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;appId=175500369215845" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+<%- end -%>
+
 <%= @content_for_layout %>
 
 <%- if @show_footer -%>
