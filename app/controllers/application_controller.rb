@@ -24,7 +24,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def xhtml_enabled?
-    in_a_web? and [:markdownMML, :markdownPNG, :markdown].include?(@web.markup)
+    #in_a_web? and [:markdownMML, :markdownPNG, :markdown].include?(@web.markup)
+    false
   end
 
   def html_ext
