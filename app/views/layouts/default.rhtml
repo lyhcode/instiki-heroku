@@ -10,30 +10,7 @@
 
 <div id="Container">
 <div id="Content">
-  <h1 id="pageName">
-    <%= render(:file => 'svg_logo') if xhtml_enabled? %>
-    <%- if @page and (@page.name == 'HomePage') and %w( show published print ).include?(@action_name) -%>
-      <%= h(@web.name) + (@show_diff ? ' (changes)' : '') %>
-    <%- elsif @web -%>
-      <span class="webName"><%= @web.name %></span><br />
-      <%= @title %>
-    <%- else -%>
-      <%= @title %>
-    <%- end %>
-  </h1>
-
-<%= render(:file => 'navigation') unless @web.nil? || @hide_navigation %>
-
-<%- if flash[:info] -%>
-  <div class="info"><%= escape_preserving_linefeeds flash[:info] %></div>
-<%- end -%>
-
-<%- if @error or flash[:error] -%> 
-    <div class="errorExplanation"><%= escape_preserving_linefeeds(@error || flash[:error]) %></div>
-<%- end -%>
-
-<%= @content_for_layout %>
-
+1234
 <div id="comments">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
